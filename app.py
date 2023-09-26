@@ -27,7 +27,7 @@ else:
         GENDER = {'Male': 0, 'Female': 1}
         DEGREE_T = {'Science and Technology':'Sci&Tech', 'Commerece and Management': 'Comm&Mgmt', 'Others': 'Others'}
         SPECIALISATION= {'Market and HR': 'Mkt&HR', 'Market and Finance': 'Mkt&Fin'}
-        gender = st.sidebar.selectbox('Item Fat content', ('Male', 'Female'))
+        gender = st.sidebar.selectbox('Gender', ('Male', 'Female'))
         ssc_p = st.sidebar.slider('Percentage of Mark scored in 10th', 0, 100, 40)
         ssc_b = st.sidebar.selectbox('Which Board Studied in 10th', ('Others', 'Central'))
         hsc_p = st.sidebar.slider('Percentage of Mark scored in 12th', 0, 100, 40)
