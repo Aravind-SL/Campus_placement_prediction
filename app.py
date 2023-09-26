@@ -1,10 +1,8 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-import pickle
 
 from src.pipelines.predict_pipeline import PredictPipeline
-#import model here.
 
 st.write("""
 # Campus prediction App.
@@ -76,4 +74,4 @@ predict_pipeline = PredictPipeline()
 predicted_value= predict_pipeline.predict(input_df)
 
 st.subheader('Prediction')
-st.write(predicted_value)
+st.write('will be Placed' if predicted_value ==1 else 'Not placed')
